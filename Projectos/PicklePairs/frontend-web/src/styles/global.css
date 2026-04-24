@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* ── Colors: Primary (Muted Green — buttons, interactive) ── */
+  --color-primary:       #869A69;
+  --color-primary-dark:  #6B7E54;
+  --color-primary-light: #D4DFC8;
+
+  /* ── Colors: Accent (The Ball) ── */
+  --color-accent:        #ADBA5E;
+  --color-accent-dark:   #8FA348;
+  --color-accent-light:  #E8EDCC;
+
+  /* ── Colors: Secondary (Court Blue) ── */
+  --color-secondary:       #65AAC2;
+  --color-secondary-light: #C8E2EE;
+
+  /* ── Colors: Surface & Background ── */
+  --color-bg:           #65AAC2;
+  --color-surface:      #035c7b;
+  --color-surface-alt:  #024e69;
+  --color-border:       #B8B6A8;
+  --color-border-strong:#958F82;
+
+  /* ── Colors: Text ── */
+  --color-text-primary:   #1A1E1C;
+  --color-text-secondary: #3A3E3C;
+  --color-text-tertiary:  #5A5E5C;
+  --color-text-on-bg:     #1A1E1C;
+
+  /* ── Colors: Semantic ── */
+  --color-error:       #C0392B;
+  --color-error-light: #FDECEA;
+
+  /* ── Typography ── */
+  --font-family: 'Inter', system-ui, sans-serif;
+  --text-display: 800 36px/1.1 var(--font-family);
+  --text-h1:      700 24px/1.2 var(--font-family);
+  --text-h2:      700 18px/1.3 var(--font-family);
+  --text-body:    400 15px/1.5 var(--font-family);
+  --text-small:   400 13px/1.4 var(--font-family);
+  --text-label:   700 11px/1   var(--font-family);
+
+  /* ── Spacing ── */
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  20px;
+  --space-6:  24px;
+  --space-8:  32px;
+  --space-12: 48px;
+  --space-20: 80px;
+
+  /* ── Border Radius: The Pickleball Rule ── */
+  --radius-none: 0px;       /* cards, panels — the court       */
+  --radius-sm:   4px;       /* inputs, tags, secondary buttons  */
+  --radius-pill: 9999px;    /* Generate Teams button — the ball */
+
+  /* ── Shadows ── */
+  --shadow-sm: 0 1px 3px rgba(26, 30, 28, 0.08);
+  --shadow-md: 0 4px 16px rgba(26, 30, 28, 0.10);
+
+  /* ── Motion ── */
+  --duration-fast:   100ms;
+  --duration-normal: 150ms;
+  --duration-slow:   200ms;
+  --ease-out:   cubic-bezier(0, 0, 0.2, 1);
+  --ease-in:    cubic-bezier(0.4, 0, 1, 1);
+  --ease-inout: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ── Base ── */
+body {
+  font: var(--text-body);
+  font-family: var(--font-family);
+  background: var(--color-bg);
+  color: var(--color-text-primary);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+  transition: background var(--duration-fast) var(--ease-inout),
+              color     var(--duration-fast) var(--ease-inout),
+              border-color var(--duration-fast) var(--ease-inout),
+              opacity   var(--duration-fast) var(--ease-inout);
+}
+
+input {
+  font-family: inherit;
+  transition: border-color var(--duration-fast) var(--ease-out);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ── Focus Indicator (WCAG 2.4.11) ── */
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* ── Screen-reader only (visually hidden, accessible) ── */
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ── Reduced Motion ── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration:  0.01ms !important;
+  }
+}

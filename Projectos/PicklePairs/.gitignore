@@ -1,0 +1,29 @@
+# Python
+backend/venv/
+backend/__pycache__/
+backend/**/__pycache__/
+backend/**/*.pyc
+backend/.env
+backend/*.db
+backend/*.sqlite3
+*.egg-info/
+.pytest_cache/
+
+# Node
+frontend-web/node_modules/
+frontend-web/dist/
+frontend-web/.env.local
+frontend-web/.env.*.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Misc
+*.log
+Performance_Reports/
+How_To_Run_Backend.png
