@@ -1,0 +1,32 @@
+.snackbar {
+  position: fixed;
+  bottom: var(--space-8);
+  left: 50%;
+  transform: translateX(-50%) translateY(0);
+  background: var(--color-text-primary);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  padding: var(--space-3) var(--space-6);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-md);
+  z-index: 200;
+  white-space: nowrap;
+  transition: opacity 250ms var(--ease-out), transform 250ms var(--ease-out);
+}
+
+.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+  animation: slideUp 200ms var(--ease-out);
+}
+
+.hide {
+  opacity: 0;
+  transform: translateX(-50%) translateY(8px);
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateX(-50%) translateY(12px); }
+  to   { opacity: 1; transform: translateX(-50%) translateY(0); }
+}

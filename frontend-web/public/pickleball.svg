@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Pickleball">
+  <defs>
+    <radialGradient id="ballGrad" cx="40%" cy="32%" r="65%">
+      <stop offset="0%"   stop-color="#FFFF66"/>
+      <stop offset="100%" stop-color="#E6E600"/>
+    </radialGradient>
+    <clipPath id="ballClip">
+      <circle cx="32" cy="32" r="29"/>
+    </clipPath>
+  </defs>
+
+  <!-- Ball body -->
+  <circle cx="32" cy="32" r="30" fill="url(#ballGrad)"/>
+
+  <!-- Holes (clipped so they never bleed outside the ball) -->
+  <g clip-path="url(#ballClip)" fill="#1A1E1C" opacity="0.72">
+    <!-- top -->
+    <circle cx="32" cy="9"  r="2.8"/>
+    <!-- upper arc -->
+    <circle cx="18" cy="14" r="2.8"/>
+    <circle cx="46" cy="14" r="2.8"/>
+    <!-- upper-mid arc -->
+    <circle cx="10" cy="26" r="2.8"/>
+    <circle cx="22" cy="22" r="2.8"/>
+    <circle cx="42" cy="22" r="2.8"/>
+    <circle cx="54" cy="26" r="2.8"/>
+    <!-- equator -->
+    <circle cx="16" cy="32" r="2.8"/>
+    <circle cx="32" cy="32" r="2.8"/>
+    <circle cx="48" cy="32" r="2.8"/>
+    <!-- lower-mid arc -->
+    <circle cx="10" cy="38" r="2.8"/>
+    <circle cx="22" cy="42" r="2.8"/>
+    <circle cx="42" cy="42" r="2.8"/>
+    <circle cx="54" cy="38" r="2.8"/>
+    <!-- lower arc -->
+    <circle cx="18" cy="50" r="2.8"/>
+    <circle cx="46" cy="50" r="2.8"/>
+    <!-- bottom -->
+    <circle cx="32" cy="55" r="2.8"/>
+  </g>
+
+  <!-- Border -->
+  <circle cx="32" cy="32" r="30" fill="none" stroke="#1A1E1C" stroke-width="2"/>
+</svg>

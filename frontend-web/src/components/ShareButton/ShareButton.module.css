@@ -1,0 +1,18 @@
+.button {
+  background: none;
+  border: none;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-secondary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+  padding: 0;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+}
+
+.button:hover {
+  color: #ffffff;
+}
