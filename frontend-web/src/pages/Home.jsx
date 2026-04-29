@@ -63,7 +63,7 @@ export default function Home() {
     <div className={styles.page}>
       {toast && <Toast message={toast} onDone={() => setToast(null)} />}
       <header className={styles.header}>
-        <h1 className={styles.logo}>Pickle Pick a Pair</h1>
+        <h1 className={styles.logo}>DinkDuo</h1>
         <p className={styles.tagline}>Random pickleball teams.</p>
       </header>
 

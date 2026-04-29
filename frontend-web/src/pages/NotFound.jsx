@@ -6,7 +6,7 @@ export default function NotFound() {
   return (
     <div className={styles.page}>
       <header className={styles.header}>
-        <h1 className={styles.logo}>🏓 PicklePairs</h1>
+        <h1 className={styles.logo}>DinkDuo</h1>
         <p className={styles.tagline}>Page not found.</p>
       </header>
       <button className={styles.buttonPrimary} onClick={() => navigate('/')}>
