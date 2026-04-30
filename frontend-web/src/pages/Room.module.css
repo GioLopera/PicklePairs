@@ -53,15 +53,14 @@
 .roomTitle {
   font: var(--text-display);
   font-family: var(--font-family);
-  color: #ffffff;
+  color: #035c7b;
   letter-spacing: -0.02em;
 }
 
 .roomTagline {
-  color: var(--color-text-primary);
+  color: #035c7b;
   font-size: 15px;
-  font-weight: 400;
-  opacity: 0.7;
+  font-weight: 600;
 }
 
 .error {

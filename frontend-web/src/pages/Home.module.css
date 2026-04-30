@@ -19,16 +19,15 @@
 .logo {
   font: var(--text-display);
   font-family: var(--font-family);
-  color: #ffffff;
+  color: #035c7b;
   letter-spacing: -0.02em;
 }
 
 .tagline {
   margin-top: var(--space-2);
-  color: #F0F4F7;
-  opacity: 0.85;
+  color: #035c7b;
   font-size: 15px;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .error {
